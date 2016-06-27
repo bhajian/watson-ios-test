@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4CCC76421D21801C00B3E66E"
-               BuildableName = "watson-test1.app"
-               BlueprintName = "watson-test1"
-               ReferencedContainer = "container:watson-test1.xcodeproj">
+               BlueprintIdentifier = "4CCC76811D2192EF00B3E66E"
+               BuildableName = "watson-speaks.app"
+               BlueprintName = "watson-speaks"
+               ReferencedContainer = "container:watson-speaks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4CCC765A1D21801C00B3E66E"
-               BuildableName = "watson-test1Tests.xctest"
-               BlueprintName = "watson-test1Tests"
-               ReferencedContainer = "container:watson-test1.xcodeproj">
+               BlueprintIdentifier = "4CCC76951D2192EF00B3E66E"
+               BuildableName = "watson-speaksTests.xctest"
+               BlueprintName = "watson-speaksTests"
+               ReferencedContainer = "container:watson-speaks.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4CCC76651D21801C00B3E66E"
-               BuildableName = "watson-test1UITests.xctest"
-               BlueprintName = "watson-test1UITests"
-               ReferencedContainer = "container:watson-test1.xcodeproj">
+               BlueprintIdentifier = "4CCC76A01D2192EF00B3E66E"
+               BuildableName = "watson-speaksUITests.xctest"
+               BlueprintName = "watson-speaksUITests"
+               ReferencedContainer = "container:watson-speaks.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4CCC76421D21801C00B3E66E"
-            BuildableName = "watson-test1.app"
-            BlueprintName = "watson-test1"
-            ReferencedContainer = "container:watson-test1.xcodeproj">
+            BlueprintIdentifier = "4CCC76811D2192EF00B3E66E"
+            BuildableName = "watson-speaks.app"
+            BlueprintName = "watson-speaks"
+            ReferencedContainer = "container:watson-speaks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4CCC76421D21801C00B3E66E"
-            BuildableName = "watson-test1.app"
-            BlueprintName = "watson-test1"
-            ReferencedContainer = "container:watson-test1.xcodeproj">
+            BlueprintIdentifier = "4CCC76811D2192EF00B3E66E"
+            BuildableName = "watson-speaks.app"
+            BlueprintName = "watson-speaks"
+            ReferencedContainer = "container:watson-speaks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4CCC76421D21801C00B3E66E"
-            BuildableName = "watson-test1.app"
-            BlueprintName = "watson-test1"
-            ReferencedContainer = "container:watson-test1.xcodeproj">
+            BlueprintIdentifier = "4CCC76811D2192EF00B3E66E"
+            BuildableName = "watson-speaks.app"
+            BlueprintName = "watson-speaks"
+            ReferencedContainer = "container:watson-speaks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

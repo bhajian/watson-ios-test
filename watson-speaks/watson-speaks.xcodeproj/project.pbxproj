@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CCC76861D2192EF00B3E66E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC76851D2192EF00B3E66E /* AppDelegate.swift */; };
+		4CCC76881D2192EF00B3E66E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC76871D2192EF00B3E66E /* ViewController.swift */; };
+		4CCC768B1D2192EF00B3E66E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCC76891D2192EF00B3E66E /* Main.storyboard */; };
+		4CCC768D1D2192EF00B3E66E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCC768C1D2192EF00B3E66E /* Assets.xcassets */; };
+		4CCC76901D2192EF00B3E66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCC768E1D2192EF00B3E66E /* LaunchScreen.storyboard */; };
+		4CCC769B1D2192EF00B3E66E /* watson_speaksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC769A1D2192EF00B3E66E /* watson_speaksTests.swift */; };
+		4CCC76A61D2192EF00B3E66E /* watson_speaksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCC76A51D2192EF00B3E66E /* watson_speaksUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CCC76971D2192EF00B3E66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CCC767A1D2192EF00B3E66E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CCC76811D2192EF00B3E66E;
+			remoteInfo = "watson-speaks";
+		};
+		4CCC76A21D2192EF00B3E66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CCC767A1D2192EF00B3E66E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CCC76811D2192EF00B3E66E;
+			remoteInfo = "watson-speaks";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CCC76821D2192EF00B3E66E /* watson-speaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watson-speaks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCC76851D2192EF00B3E66E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CCC76871D2192EF00B3E66E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CCC768A1D2192EF00B3E66E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CCC768C1D2192EF00B3E66E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CCC768F1D2192EF00B3E66E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CCC76911D2192EF00B3E66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CCC76961D2192EF00B3E66E /* watson-speaksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watson-speaksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCC769A1D2192EF00B3E66E /* watson_speaksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watson_speaksTests.swift; sourceTree = "<group>"; };
+		4CCC769C1D2192EF00B3E66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CCC76A11D2192EF00B3E66E /* watson-speaksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "watson-speaksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCC76A51D2192EF00B3E66E /* watson_speaksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watson_speaksUITests.swift; sourceTree = "<group>"; };
+		4CCC76A71D2192EF00B3E66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CCC767F1D2192EF00B3E66E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCC76931D2192EF00B3E66E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCC769E1D2192EF00B3E66E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CCC76791D2192EF00B3E66E = {
+			isa = PBXGroup;
+			children = (
+				4CCC76841D2192EF00B3E66E /* watson-speaks */,
+				4CCC76991D2192EF00B3E66E /* watson-speaksTests */,
+				4CCC76A41D2192EF00B3E66E /* watson-speaksUITests */,
+				4CCC76831D2192EF00B3E66E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CCC76831D2192EF00B3E66E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC76821D2192EF00B3E66E /* watson-speaks.app */,
+				4CCC76961D2192EF00B3E66E /* watson-speaksTests.xctest */,
+				4CCC76A11D2192EF00B3E66E /* watson-speaksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CCC76841D2192EF00B3E66E /* watson-speaks */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC76851D2192EF00B3E66E /* AppDelegate.swift */,
+				4CCC76871D2192EF00B3E66E /* ViewController.swift */,
+				4CCC76891D2192EF00B3E66E /* Main.storyboard */,
+				4CCC768C1D2192EF00B3E66E /* Assets.xcassets */,
+				4CCC768E1D2192EF00B3E66E /* LaunchScreen.storyboard */,
+				4CCC76911D2192EF00B3E66E /* Info.plist */,
+			);
+			path = "watson-speaks";
+			sourceTree = "<group>";
+		};
+		4CCC76991D2192EF00B3E66E /* watson-speaksTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC769A1D2192EF00B3E66E /* watson_speaksTests.swift */,
+				4CCC769C1D2192EF00B3E66E /* Info.plist */,
+			);
+			path = "watson-speaksTests";
+			sourceTree = "<group>";
+		};
+		4CCC76A41D2192EF00B3E66E /* watson-speaksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CCC76A51D2192EF00B3E66E /* watson_speaksUITests.swift */,
+				4CCC76A71D2192EF00B3E66E /* Info.plist */,
+			);
+			path = "watson-speaksUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CCC76811D2192EF00B3E66E /* watson-speaks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CCC76AA1D2192EF00B3E66E /* Build configuration list for PBXNativeTarget "watson-speaks" */;
+			buildPhases = (
+				4CCC767E1D2192EF00B3E66E /* Sources */,
+				4CCC767F1D2192EF00B3E66E /* Frameworks */,
+				4CCC76801D2192EF00B3E66E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watson-speaks";
+			productName = "watson-speaks";
+			productReference = 4CCC76821D2192EF00B3E66E /* watson-speaks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CCC76951D2192EF00B3E66E /* watson-speaksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CCC76AD1D2192EF00B3E66E /* Build configuration list for PBXNativeTarget "watson-speaksTests" */;
+			buildPhases = (
+				4CCC76921D2192EF00B3E66E /* Sources */,
+				4CCC76931D2192EF00B3E66E /* Frameworks */,
+				4CCC76941D2192EF00B3E66E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CCC76981D2192EF00B3E66E /* PBXTargetDependency */,
+			);
+			name = "watson-speaksTests";
+			productName = "watson-speaksTests";
+			productReference = 4CCC76961D2192EF00B3E66E /* watson-speaksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4CCC76A01D2192EF00B3E66E /* watson-speaksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CCC76B01D2192EF00B3E66E /* Build configuration list for PBXNativeTarget "watson-speaksUITests" */;
+			buildPhases = (
+				4CCC769D1D2192EF00B3E66E /* Sources */,
+				4CCC769E1D2192EF00B3E66E /* Frameworks */,
+				4CCC769F1D2192EF00B3E66E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CCC76A31D2192EF00B3E66E /* PBXTargetDependency */,
+			);
+			name = "watson-speaksUITests";
+			productName = "watson-speaksUITests";
+			productReference = 4CCC76A11D2192EF00B3E66E /* watson-speaksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CCC767A1D2192EF00B3E66E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "behnam hajian";
+				TargetAttributes = {
+					4CCC76811D2192EF00B3E66E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4CCC76951D2192EF00B3E66E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4CCC76811D2192EF00B3E66E;
+					};
+					4CCC76A01D2192EF00B3E66E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4CCC76811D2192EF00B3E66E;
+					};
+				};
+			};
+			buildConfigurationList = 4CCC767D1D2192EF00B3E66E /* Build configuration list for PBXProject "watson-speaks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CCC76791D2192EF00B3E66E;
+			productRefGroup = 4CCC76831D2192EF00B3E66E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CCC76811D2192EF00B3E66E /* watson-speaks */,
+				4CCC76951D2192EF00B3E66E /* watson-speaksTests */,
+				4CCC76A01D2192EF00B3E66E /* watson-speaksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CCC76801D2192EF00B3E66E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCC76901D2192EF00B3E66E /* LaunchScreen.storyboard in Resources */,
+				4CCC768D1D2192EF00B3E66E /* Assets.xcassets in Resources */,
+				4CCC768B1D2192EF00B3E66E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCC76941D2192EF00B3E66E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCC769F1D2192EF00B3E66E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CCC767E1D2192EF00B3E66E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCC76881D2192EF00B3E66E /* ViewController.swift in Sources */,
+				4CCC76861D2192EF00B3E66E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCC76921D2192EF00B3E66E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCC769B1D2192EF00B3E66E /* watson_speaksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CCC769D1D2192EF00B3E66E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCC76A61D2192EF00B3E66E /* watson_speaksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CCC76981D2192EF00B3E66E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CCC76811D2192EF00B3E66E /* watson-speaks */;
+			targetProxy = 4CCC76971D2192EF00B3E66E /* PBXContainerItemProxy */;
+		};
+		4CCC76A31D2192EF00B3E66E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CCC76811D2192EF00B3E66E /* watson-speaks */;
+			targetProxy = 4CCC76A21D2192EF00B3E66E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CCC76891D2192EF00B3E66E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CCC768A1D2192EF00B3E66E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CCC768E1D2192EF00B3E66E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CCC768F1D2192EF00B3E66E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CCC76A81D2192EF00B3E66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CCC76A91D2192EF00B3E66E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CCC76AB1D2192EF00B3E66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "watson-speaks/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "apiconnect.watson-speaks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4CCC76AC1D2192EF00B3E66E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "watson-speaks/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "apiconnect.watson-speaks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4CCC76AE1D2192EF00B3E66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "watson-speaksTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "apiconnect.watson-speaksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watson-speaks.app/watson-speaks";
+			};
+			name = Debug;
+		};
+		4CCC76AF1D2192EF00B3E66E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "watson-speaksTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "apiconnect.watson-speaksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watson-speaks.app/watson-speaks";
+			};
+			name = Release;
+		};
+		4CCC76B11D2192EF00B3E66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watson-speaksUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "apiconnect.watson-speaksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "watson-speaks";
+			};
+			name = Debug;
+		};
+		4CCC76B21D2192EF00B3E66E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watson-speaksUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "apiconnect.watson-speaksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "watson-speaks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CCC767D1D2192EF00B3E66E /* Build configuration list for PBXProject "watson-speaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCC76A81D2192EF00B3E66E /* Debug */,
+				4CCC76A91D2192EF00B3E66E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CCC76AA1D2192EF00B3E66E /* Build configuration list for PBXNativeTarget "watson-speaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCC76AB1D2192EF00B3E66E /* Debug */,
+				4CCC76AC1D2192EF00B3E66E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CCC76AD1D2192EF00B3E66E /* Build configuration list for PBXNativeTarget "watson-speaksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCC76AE1D2192EF00B3E66E /* Debug */,
+				4CCC76AF1D2192EF00B3E66E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CCC76B01D2192EF00B3E66E /* Build configuration list for PBXNativeTarget "watson-speaksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCC76B11D2192EF00B3E66E /* Debug */,
+				4CCC76B21D2192EF00B3E66E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CCC767A1D2192EF00B3E66E /* Project object */;
+}

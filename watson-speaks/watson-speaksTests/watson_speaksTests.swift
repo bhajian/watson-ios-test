@@ -1,15 +1,15 @@
 //
-//  watson_test1Tests.swift
-//  watson-test1Tests
+//  watson_speaksTests.swift
+//  watson-speaksTests
 //
 //  Created by behnam hajian on 2016-06-27.
 //  Copyright © 2016 behnam hajian. All rights reserved.
 //
 
 import XCTest
-@testable import watson_test1
+@testable import watson_speaks
 
-class watson_test1Tests: XCTestCase {
+class watson_speaksTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>watson-test1.xcscheme</key>
+		<key>watson-speaks.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4CCC76421D21801C00B3E66E</key>
+		<key>4CCC76811D2192EF00B3E66E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CCC765A1D21801C00B3E66E</key>
+		<key>4CCC76951D2192EF00B3E66E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CCC76651D21801C00B3E66E</key>
+		<key>4CCC76A01D2192EF00B3E66E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

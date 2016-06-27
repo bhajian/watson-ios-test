@@ -1,6 +1,6 @@
 //
-//  DataViewController.swift
-//  watson-test1
+//  ViewController.swift
+//  watson-speaks
 //
 //  Created by behnam hajian on 2016-06-27.
 //  Copyright © 2016 behnam hajian. All rights reserved.
@@ -8,11 +8,7 @@
 
 import UIKit
 
-class DataViewController: UIViewController {
-
-    @IBOutlet weak var dataLabel: UILabel!
-    var dataObject: String = ""
-
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +18,6 @@ class DataViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        self.dataLabel!.text = dataObject
     }
 
 

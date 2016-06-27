@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  watson-test1
+//  watson-speaks
 //
 //  Created by behnam hajian on 2016-06-27.
 //  Copyright © 2016 behnam hajian. All rights reserved.

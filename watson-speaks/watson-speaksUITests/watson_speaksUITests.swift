@@ -1,6 +1,6 @@
 //
-//  watson_test1UITests.swift
-//  watson-test1UITests
+//  watson_speaksUITests.swift
+//  watson-speaksUITests
 //
 //  Created by behnam hajian on 2016-06-27.
 //  Copyright © 2016 behnam hajian. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class watson_test1UITests: XCTestCase {
+class watson_speaksUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
