@@ -1,5 +1,5 @@
 /**
- * Copyright IBM Corporation 2016
+ * Copyright IBM Corporation 2015
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,48 +15,36 @@
  **/
 
 import Foundation
-import ObjectMapper
+import Freddy
 
 /**
  
  **SAORelations**
  
- Returned by the AlchemyLanguage service.
+ Response object for **SAORelation** related calls
  
  */
-public struct SAORelations: AlchemyLanguageGenericModel, Mappable {
 
-    // MARK: AlchemyGenericModel
-    public var totalTransactions: Int?
-
-    // MARK: AlchemyLanguageGenericModel
-    public var language: String?
-    public var url: String?
+public struct SAORelations: JSONDecodable {
     
-    // MARK: SAORelations
-    /** text inputted */
-    public var text: String?
-
-    /** results (see **SAORelation**) */
-    public var relations: [SAORelation]?
-
+    /** extracted language */
+    public let language: String?
     
+    /** the URL information was requested for */
+    public let url: String?
     
-    public init?(_ map: Map) {}
+    /** document text */
+    public let text: String?
     
-    public mutating func mapping(map: Map) {
-        
-        // alchemyGenericModel
-        totalTransactions <- (map["totalTransactions"], Transformation.stringToInt)
-        
-        // alchemyLanguageGenericModel
-        language <- map["language"]
-        url <- map["url"]
-        
-        // saoRelations
-        text <- map["text"]
-        relations <- map["relations"]
-        
+    /** see **SAORelation** */
+    public let relations: [SAORelation]?
+    
+    /// Used internally to initialize a SAORelations object
+    public init(json: JSON) throws {
+        language = try? json.string("language")
+        url = try? json.string("url")
+        text = try? json.string("text")
+        relations = try? json.arrayOf("relations", type: SAORelation.self)
     }
-    
 }
+
