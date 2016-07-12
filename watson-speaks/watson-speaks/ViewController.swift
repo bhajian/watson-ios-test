@@ -16,17 +16,39 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer?
     // the capture session must not fall out of scope while in use
     var captureSession: AVCaptureSession?
-    
     @IBOutlet weak var mytext: UITextField!
+    var recorder: AVAudioRecorder!
     
+    @IBOutlet weak var transcribedLabel: UILabel!
     // Do any additional setup after loading the view, typically from a nib.
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
+        let document = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let fileName = "speechToTextRecording.wav"
+        let filePath = NSURL(fileURLWithPath: document + "/" + fileName)
+        let session = AVAudioSession.sharedInstance()
+        var settings = [String: AnyObject] ()
+        settings[AVSampleRateKey] = NSNumber(float: 44100.0)
+        settings[AVNumberOfChannelsKey] = NSNumber(int: 1)
+        do{
+            try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            recorder = try AVAudioRecorder(URL: filePath, settings: settings)
+        } catch{
+            
+        }
+        
+        guard let recorder = recorder else {
+            return
+        }
+    }
+    
+    
+    
+    @IBAction func sayIt(sender: AnyObject) {
         let tts = TextToSpeech(username: "7317c9cc-30bb-4297-bd5b-6f07784497ac", password: "lami8dTC00N6")
         
-        tts.synthesize("Hello Behnam. What do you want me to say",
+        tts.synthesize(mytext.text!,
                        voice: SynthesisVoice.GB_Kate,
                        audioFormat: AudioFormat.WAV,
                        failure: { error in
@@ -42,6 +64,8 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -50,53 +74,34 @@ class ViewController: UIViewController {
     
     
 
-    @IBAction func Listen(sender: AnyObject) {
-       //  create capture session
-        print("testing:" )
-                captureSession = AVCaptureSession()
-                guard let captureSession = captureSession else {
-                    return
-                }
-        
-                // set microphone as a capture session input
-                let microphoneDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeAudio)
-                let microphoneInput = try? AVCaptureDeviceInput(device: microphoneDevice)
-                if captureSession.canAddInput(microphoneInput) {
-                    captureSession.addInput(microphoneInput)
-                }
-        
-                // create Speech to Text object
+    @IBAction func Listen(sender: UIButton) {
+        if (!recorder.recording) {
+            do {
+                let session = AVAudioSession.sharedInstance()
+                try session.setActive(true)
+                recorder.record()
+                sender.alpha = 1
+            } catch {
+                
+            }
+        } else {
+            do {
+                recorder.stop()
+                sender.alpha = 0.5
+                let session = AVAudioSession.sharedInstance()
+                try session.setActive(false)
                 let username = "87bb86cb-61a5-4742-afec-26a7f23c592e"
                 let password = "FxxzwmJ5Dgrj"
                 let speechToText = SpeechToText(username: username, password: password)
-        
-                // define transcription settings
-                var settings = TranscriptionSettings(contentType: .L16(rate: 44100, channels: 1))
-                settings.continuous = true
-                settings.interimResults = true
-        
-                // create output for capture session
+                let settings = TranscriptionSettings(contentType: .WAV)
                 let failure = { (error: NSError) in print(error) }
-                let output = speechToText.createTranscriptionOutput(settings, failure: failure) { results in
-                    if let transcription = results.last?.alternatives.last?.transcript {
-                        print(transcription)
+                speechToText.transcribe(recorder.url, settings: settings, failure: failure){
+                    result in if let Transcription = result.last?.alternatives.last?.transcript{
+                        self.transcribedLabel.text = Transcription
                     }
                 }
-        
-                if let output = output {
-                    let transcriptionOutput = output.0
-                    let stopStreaming = output.1
-        
-                    // set Speech to Text as a capture session output
-                    if captureSession.canAddOutput(transcriptionOutput) {
-                        captureSession.addOutput(transcriptionOutput)
-                    }
-                    
-                    // add any custom capture session outputs here
-                    
-                    // start capture session to stream audio
-                    captureSession.startRunning()
-                }
+            } catch {}
+        }
     }
 
 }

@@ -22,18 +22,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnM-dg-vRE">
-                                <rect key="frame" x="22" y="40" width="42" height="30"/>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnM-dg-vRE">
+                                <rect key="frame" x="20" y="135" width="42" height="30"/>
                                 <state key="normal" title="Listen"/>
                                 <connections>
                                     <action selector="Listen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOf-zy-4Mp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOV-Ck-eX8">
+                                <rect key="frame" x="26" y="41" width="36" height="30"/>
+                                <state key="normal" title="say it"/>
+                                <connections>
+                                    <action selector="sayIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZR-TQ-GPj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btx-OT-mIR">
+                                <rect key="frame" x="39" y="179" width="393" height="173"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="mytext" destination="Ymm-wi-8hG" id="eaE-ft-9fG"/>
+                        <outlet property="transcribedLabel" destination="btx-OT-mIR" id="Ggf-CL-Gcz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
